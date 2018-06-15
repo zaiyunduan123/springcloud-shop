@@ -1,6 +1,8 @@
 spring:
   application:
     name: product
+server:
+  port: 8080
 eureka:
   client:
     service-url:
