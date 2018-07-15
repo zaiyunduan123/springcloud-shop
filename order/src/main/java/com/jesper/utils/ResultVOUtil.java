@@ -1,7 +1,7 @@
 package com.jesper.utils;
 
 
-import com.jesper.VO.ResultVO;
+import com.jesper.vo.ResultVO;
 
 public class ResultVOUtil {
 
