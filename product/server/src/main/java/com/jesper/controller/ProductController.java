@@ -2,7 +2,8 @@ package com.jesper.controller;
 
 import com.jesper.data.ProductCategory;
 import com.jesper.data.ProductInfo;
-import com.jesper.dto.CartDTO;
+import com.jesper.product.common.DecreaseStockInput;
+import com.jesper.product.common.ProductInfoOutput;
 import com.jesper.service.CategoryService;
 import com.jesper.service.ProductService;
 import com.jesper.utils.ResultVOUtil;
@@ -76,13 +77,13 @@ public class ProductController {
      * @return
      */
     @PostMapping("/listForOrder")
-    public List<ProductInfo> listForOrder(@RequestBody  List<String> productIdList){
+    public List<ProductInfoOutput> listForOrder(@RequestBody  List<String> productIdList){
        return productService.findList(productIdList);
     }
 
     @PostMapping("/decreaseStock")
-    public void decreaseStock(@RequestBody List<CartDTO> cartDTOList){
-        productService.decreaseStock(cartDTOList);
+    public void decreaseStock(@RequestBody  List<DecreaseStockInput> decreaseStockInputList){
+        productService.decreaseStock(decreaseStockInputList);
     }
 
 }

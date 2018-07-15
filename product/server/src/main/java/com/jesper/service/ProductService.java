@@ -1,7 +1,8 @@
 package com.jesper.service;
 
 import com.jesper.data.ProductInfo;
-import com.jesper.dto.CartDTO;
+import com.jesper.product.common.DecreaseStockInput;
+import com.jesper.product.common.ProductInfoOutput;
 
 import java.util.List;
 
@@ -15,11 +16,10 @@ public interface ProductService {
      */
     List<ProductInfo> findUpAll();
 
-    List<ProductInfo> findList(List<String> productIdList);
+    List<ProductInfoOutput> findList(List<String> productIdList);
 
     /**
      * 扣库存
-     * @param cartDTOList
      */
-    void decreaseStock(List<CartDTO> cartDTOList);
+    void decreaseStock(List<DecreaseStockInput> decreaseStockInputList);
 }
