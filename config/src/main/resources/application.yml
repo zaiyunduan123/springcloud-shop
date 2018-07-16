@@ -5,12 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:test/config-repo.git
+          uri: git@github.com:qqq19923/config-repo.git
           username: test
           password: test
-          search-paths: application
-      label: master
-
 eureka:
   client:
     service-url:
