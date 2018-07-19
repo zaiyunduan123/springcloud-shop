@@ -10,4 +10,4 @@
 - 订单服务 http://localhost:8081
 
 ### 架构图
-![](https://github.com/zaiyunduan123/springcloud_shop/image/image.png)
+![](https://github.com/zaiyunduan123/springcloud_shop/blob/master/image/image.png)
