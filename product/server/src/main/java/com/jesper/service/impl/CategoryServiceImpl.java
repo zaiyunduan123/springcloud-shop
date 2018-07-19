@@ -22,4 +22,3 @@ public class CategoryServiceImpl implements CategoryService {
         return productCategoryRepository.findByCategoryTypeIn(categoryTypeList);
     }
 }
-
