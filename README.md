@@ -14,4 +14,4 @@
 - 消息总线RabbitMQ  http://localhost:15672
 
 ### 架构图
-![](https://github.com/zaiyunduan123/springcloud_shop/image/image.png)
+![](https://github.com/zaiyunduan123/springcloud_shop/blob/master/image/image.png)
