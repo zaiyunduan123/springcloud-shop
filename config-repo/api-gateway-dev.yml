@@ -1,0 +1,9 @@
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+management:
+  security:
+    enabled: false
