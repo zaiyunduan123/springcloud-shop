@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-
+// 对外暴露的接口
 @FeignClient(name = "product")
 public interface ProductClient {
 
